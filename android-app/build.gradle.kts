@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":mpp-library"))
+    implementation(project.mppLibrary)
 }
 
 android {

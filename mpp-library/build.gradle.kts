@@ -5,15 +5,15 @@ plugins {
 }
 
 dependencies {
-    commonMainApi(project(Modules.featureAuth))
-    commonMainImplementation(project(Modules.featureProfile))
-//    commonMainImplementation(Deps.stdlib)
+    commonMainApi(project.mppLibrary.featureAuth)
+    commonMainImplementation(project.mppLibrary.featureProfile)
+    commonMainImplementation(libs.kotlin.stdlib)
 }
 
 framework {
-    export(project(Modules.featureProfile))
-    export(project(Modules.featureAuth))
-    export(Deps.mokoMvvmCore)
+    export(project.mppLibrary.featureProfile)
+    export(project.mppLibrary.featureAuth)
+    export(libs.moko.mvvm.core)
 }
 
 cocoaPods {

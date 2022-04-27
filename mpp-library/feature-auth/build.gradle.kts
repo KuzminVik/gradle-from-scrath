@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-//    commonMainImplementation(Deps.stdlib)
-    commonMainApi(Deps.mokoMvvmCore)
+    commonMainImplementation(libs.kotlin.stdlib)
+    commonMainApi(libs.moko.mvvm.core)
 }
