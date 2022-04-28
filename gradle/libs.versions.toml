@@ -1,5 +1,5 @@
 [versions]
-kotlin = "1.5.30"
+kotlin = "1.5.21"
 mokoMvvm = "0.11.0"
 
 [libraries]

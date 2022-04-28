@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    commonMainImplementation(libs.kotlin.stdlib)
+//    commonMainImplementation(libs.kotlin.stdlib)
 }

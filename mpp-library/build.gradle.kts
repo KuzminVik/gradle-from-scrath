@@ -5,17 +5,17 @@ plugins {
 }
 
 dependencies {
-    commonMainApi(project.mppLibrary.featureAuth)
-    commonMainImplementation(project.mppLibrary.featureProfile)
-    commonMainImplementation(libs.kotlin.stdlib)
+    commonMainApi(projects.mppLibrary.featureAuth)
+    commonMainImplementation(projects.mppLibrary.featureProfile)
+//    commonMainImplementation(libs.kotlin.stdlib)
 }
 
 framework {
-    export(project.mppLibrary.featureProfile)
-    export(project.mppLibrary.featureAuth)
-    export(libs.moko.mvvm.core)
+    export(projects.mppLibrary.featureAuth)
+    export(projects.mppLibrary.featureProfile)
+    export(libs.mokoMvvmCore)
 }
 
 cocoaPods {
-//    pod("AFNetworking")
+    pod("AFNetworking")
 }
